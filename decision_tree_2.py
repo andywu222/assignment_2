@@ -45,12 +45,7 @@ for ds in dataSets:
 #[2, 2, 2, 2], ...]]
     #--> add your Python code here
     for _, row in df_training.iterrows():
-        X.append([
-            age_map[row['Age']],
-            spectacle_map[row['Spectacle Prescription']],
-            astigmatism_map[row['Astigmatism']],
-            tear_map[row['Tear Production Rate']]
-        ])
+        X.append([age_map[row['Age']], spectacle_map[row['Spectacle Prescription']], astigmatism_map[row['Astigmatism']], tear_map[row['Tear Production Rate']]])
     
     #Transform the original categorical training classes to numbers and add to the
     #vector Y.
